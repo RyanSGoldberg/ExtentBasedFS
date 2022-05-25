@@ -1,0 +1,14 @@
+Testing Reading and Writing
+3.0 - Writing to an empty file and then reading its content
+00000000: 4865 6c6c 6f0a                           Hello.
+3.1 - Appending to a file
+00000000: 4865 6c6c 6f0a 576f 726c 640a            Hello.World.
+3.2 - Reading the last line of a file (Reading from an offset)
+World
+3.4 - Writing to the start of a file
+00000000: 5859 5a6c 6f57 6f72 6c64 0a00 0000       XYZloWorld....
+3.5 - Writing to the middle of a file
+00000000: 4865 4142 4357 6f72 6c64 0a00 0000       HeABCWorld....
+3.6 - Writing and leaving a hole in the middle
+00000000: 4865 6c6c 6f57 6f72 6c64 0a00 0000 0041  HelloWorld.....A
+00000010: 6674 6572 486f 6c65                      fterHole
